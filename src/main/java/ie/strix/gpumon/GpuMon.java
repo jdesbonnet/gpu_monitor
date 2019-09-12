@@ -80,7 +80,7 @@ public class GpuMon
 			String busRx = (String) xpath.compile("//pci/rx_util/text()").evaluate(gpuNode, XPathConstants.STRING);
 			String busTx = (String) xpath.compile("//pci/tx_util/text()").evaluate(gpuNode, XPathConstants.STRING);
 			String gpuUtil = (String) xpath.compile("//utilization/gpu_util/text()").evaluate(gpuNode, XPathConstants.STRING);
-			String memUtil = (String) xpath.compile("//utilization/mem_util/text()").evaluate(gpuNode, XPathConstants.STRING);
+			String memUtil = (String) xpath.compile("//utilization/memory_util/text()").evaluate(gpuNode, XPathConstants.STRING);
 			String gpuTemp = (String) xpath.compile("//temperature/gpu_temp/text()").evaluate(gpuNode, XPathConstants.STRING);
 			String fanSpeed = (String) xpath.compile("//fan_speed/text()").evaluate(gpuNode, XPathConstants.STRING);
 			String power = (String) xpath.compile("//power_readings/power_draw/text()").evaluate(gpuNode, XPathConstants.STRING);
